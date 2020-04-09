@@ -1,4 +1,4 @@
-<div>
+<div class="container">
     <input type="text" [(ngModel)]="name">
     <br>
     <br>
@@ -8,5 +8,7 @@
     <select name="petTypeSelect" [(ngModel)]="type">
         <option [value]="petType" *ngFor="let petType of types">{{petType}}</option>
     </select>
-
+    <br>
+    <br>
+    <input type="button" value="Agregar Mascota" (click)=addMascota()>
 </div>

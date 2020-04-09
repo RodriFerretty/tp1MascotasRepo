@@ -15,14 +15,12 @@ export class CargaMascotaComponent implements OnInit {
   types = ["Perro", "Gato", "Pez"]
   constructor() { }
   ngOnInit(): void {
-
+    this.type = this.types[0]
   }
 
-  addMascota() {
+  addMascota(): void {
     let newMascota = new Mascota(this.name, this.photoUrl, this.type)
+    console.log(newMascota)
     this.mascotaAdd.emit(newMascota)
   }
-
-
-
 }
