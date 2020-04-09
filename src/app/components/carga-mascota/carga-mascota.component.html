@@ -1,0 +1,12 @@
+<div>
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <br>
+    <input type="text" [(ngModel)]="photoUrl">
+    <br>
+    <br>
+    <select name="petTypeSelect" [(ngModel)]="type">
+        <option [value]="petType" *ngFor="let petType of types">{{petType}}</option>
+    </select>
+
+</div>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tp1Mascota"
+    }
+  },
+  "defaultProject": "tp1Mascota",
+  "cli": {
+    "analytics": false
+  }
 }
