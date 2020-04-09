@@ -1,1 +1,9 @@
-<app-carga-mascota></app-carga-mascota>
+<app-carga-mascota (mascotaInputEnded)=addMascotaToListComponent($event) ></app-carga-mascota>
+
+<br><br><br>
+
+<app-detalle-mascota *ngIf="mascota" [mascotaSelected]=mascota ></app-detalle-mascota>
+
+<br><br><br>
+
+

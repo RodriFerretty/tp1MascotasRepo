@@ -7,7 +7,7 @@ import { Mascota } from 'src/app/classes/mascota';
   styleUrls: ['./carga-mascota.component.css']
 })
 export class CargaMascotaComponent implements OnInit {
-  @Output() mascotaAdd = new EventEmitter<Mascota>();
+  @Output() mascotaInputEnded = new EventEmitter<Mascota>();
 
   name: string
   photoUrl: string
@@ -21,6 +21,6 @@ export class CargaMascotaComponent implements OnInit {
   addMascota(): void {
     let newMascota = new Mascota(this.name, this.photoUrl, this.type)
     console.log(newMascota)
-    this.mascotaAdd.emit(newMascota)
+    this.mascotaInputEnded.emit(newMascota)
   }
 }

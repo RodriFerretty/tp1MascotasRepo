@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Mascota } from './classes/mascota';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tp1Mascota';
+
+  mascota: Mascota
+
+  addMascotaToListComponent(newMascota: Mascota){
+    console.log("This is the new mascota: ", newMascota)
+    this.mascota = newMascota
+  }
 }

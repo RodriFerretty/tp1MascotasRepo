@@ -5,11 +5,13 @@ import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CargaMascotaComponent } from './components/carga-mascota/carga-mascota.component';
+import { DetalleMascotaComponent } from './components/detalle-mascota/detalle-mascota.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CargaMascotaComponent
+    CargaMascotaComponent,
+    DetalleMascotaComponent
   ],
   imports: [
     BrowserModule,
