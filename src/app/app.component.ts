@@ -10,9 +10,16 @@ export class AppComponent {
   title = 'tp1Mascota';
 
   mascota: Mascota
+  mascotas: Mascota[] = [];
 
   addMascotaToListComponent(newMascota: Mascota){
     console.log("This is the new mascota: ", newMascota)
-    this.mascota = newMascota
+    console.log("This is mascotaSSS: ", this.mascotas)
+    
+    this.mascotas.push(newMascota)
+  }
+
+  showDetailOf(selectedMascota: Mascota){
+    this.mascota = selectedMascota
   }
 }

@@ -2,8 +2,9 @@
 
 <br><br><br>
 
-<app-detalle-mascota *ngIf="mascota" [mascotaSelected]=mascota ></app-detalle-mascota>
+<app-detalle-mascota *ngIf="mascota" [mascotaSelected]="mascota" ></app-detalle-mascota>
 
 <br><br><br>
 
+<app-listado-mascotas [mascotasList]="mascotas" (mascotaShowDetail)=showDetailOf($event)></app-listado-mascotas>
 

@@ -1,0 +1,12 @@
+<div>
+    <table>
+        <tr>
+            <th>Mascota</th>
+            <th>Detalle</th> 
+        </tr>
+        <tr *ngFor="let mascota of mascotasList">
+            <td>{{mascota.name}}</td> 
+            <td><button type="button" (click)=showPetDetail(mascota) >Ver Detalle</button></td> 
+        </tr>
+    </table>
+</div>

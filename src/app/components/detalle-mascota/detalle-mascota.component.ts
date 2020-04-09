@@ -9,11 +9,10 @@ import { Mascota } from 'src/app/classes/mascota';
 export class DetalleMascotaComponent implements OnInit {
   @Input() mascotaSelected: Mascota
 
-  mascota: Mascota
   constructor() { }
 
   ngOnInit(): void {
-    this.mascota = this.mascotaSelected
+
   }
 
 }
